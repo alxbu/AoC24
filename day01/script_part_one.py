@@ -18,7 +18,7 @@ def main():
 
     result = sum(off_values)
     
-    write_result(result)
+    write_result(result, 1)
 
 if __name__ == '__main__':
     main()

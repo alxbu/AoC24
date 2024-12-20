@@ -1,7 +1,6 @@
 import re
 
 INPUT = "input.txt"
-RESULT = "result.txt"
 
 def load_input():
     """
@@ -65,14 +64,30 @@ def calculate_off_value(left, right):
     """
     return abs(left - right)
 
-def write_result(result):
+def get_distinct_elements(data):
+    return list(set(data))
+
+def count_distinct_elements_in_list(data):
+    res_dict = {}
+    
+    distinct_elements = get_distinct_elements(data)
+    
+    for element in distinct_elements:
+        res_dict[element] = data.count(element)
+        
+    return res_dict
+
+def write_result(result, part, print_result=True):
     """
     Write result to file
 
     Args:
         result (int): result to write
     """
+    RESULT = f"result_part_{part}.txt"
 
     with open(RESULT, 'w') as f:
         f.write(str(result))
-    print(result)
+    
+    if print_result:
+        print(result)   

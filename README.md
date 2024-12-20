@@ -10,4 +10,11 @@ Welcome to the Advent of Code 2024! This notebook contains solutions to the dail
 
 ### Solution
 
-Result: 1646452
+Part 1 Result: 1646452
+Part 2 Result: 23609874
+
+## Day 2
+
+### Solution
+
+Result: 
